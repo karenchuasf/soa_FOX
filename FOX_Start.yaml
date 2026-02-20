@@ -1,1 +1,49 @@
+questionnaire:
+  fields:
+    - id: name
+      label: Your Name
+      type: text
+      required: true
+    - id: email
+      label: Your Email
+      type: email
+      required: true
+    - id: scrum_team
+      label: Your Scrum Team
+      type: text
+    - id: approving_manager
+      label: Who is the Approving Manager for this new service?
+      type: text
+    - id: service_name
+      label: Name of the new service
+      type: text
+    - id: foundation_domain
+      label: Foundation Domain (FD) - please select all that apply
+      type: checkboxes
+      options:
+        - Dev1
+        - Test1
+        - Prod0
+        - Prod1
+    - id: description
+      label: Please provide a short description of the service - functionality, interface, type of data etc.
+      type: textarea
+    - id: urgency
+      label: What is the business urgency to deploy this service to GA?
+      type: select
+      options:
+        - value: "3"
+          label: "3. High"
+        - value: "2"
+          label: "2. Medium"
+        - value: "1"
+          label: "1. Low"
+        - value: "0"
+          label: "0. Not known"
+    - id: justification
+      label: Please provide business justification to deploy this new service.
+      type: textarea
+    - id: other
+      label: Any other information you would like to provide
+      type: textarea
 
